@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="term">
+        <item>请选择</item>
+        <item>2009-2010-01</item>
+        <item>2009-2010-02</item>
+        <item>2009-2010</item>
+        <item>2009-2010</item>
+        <item>2009-2010</item>
+    </string-array>
+    <string-array name="department">
+        <item>请选择</item>
+        <item>通信工程学院</item>
+        <item>计算机学院</item>
+        <item>机电工程学院</item>
+
+    </string-array>
+    <string-array name="major">
+        <item>请选择</item>
+        <item>网络安全</item>
+        <item>计算机科学与技术</item>
+        <item>机电工程</item>
+    </string-array>
+    <string-array name="grade">
+        <item>请选择</item>
+        <item>2009</item>
+        <item>2010</item>
+        <item>2011</item>
+        <item>2012</item>
+    </string-array>
+    <string-array name="classes">
+        <item>请选择</item>
+        <item>1403011</item>
+        <item>1403012</item>
+        <item>1403013</item>
+        <item>1403014</item>
+    </string-array>
+
+
+
+
+</resources>
