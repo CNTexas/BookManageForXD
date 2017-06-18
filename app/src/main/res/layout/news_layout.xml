@@ -4,10 +4,13 @@
     android:layout_height="match_parent"
     android:orientation="horizontal">
     <EditText
+        android:id="@+id/inputBookName"
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:hint="@string/hint1"/>
     <Button
+        android:id="@+id/search"
+        android:onClick="searchByName"
         android:text="确定"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
