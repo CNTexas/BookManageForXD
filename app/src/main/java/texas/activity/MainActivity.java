@@ -12,6 +12,9 @@ import android.widget.Toast;
 
 import com.example.texas.bookmanage.R;
 
+import org.litepal.util.Const;
+
+import texas.bookDB.DBheper;
 import texas.constant.Constant;
 import texas.fragment.BaseFragment;
 import texas.ui.BottomControlPanel;
@@ -24,7 +27,8 @@ public class MainActivity extends Activity implements BottomPanelCallback {
 	
 	private FragmentManager fragmentManager = null;
 	private FragmentTransaction fragmentTransaction = null;
-	
+
+	DBheper dBheper = null;
 /*	private MessageFragment messageFragment;
 	private ContactsFragment contactsFragment;
 	private NewsFragment newsFragment;
@@ -35,6 +39,8 @@ public class MainActivity extends Activity implements BottomPanelCallback {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		dBheper=new DBheper();
+		dBheper.DBInit();
 		initUI();
 		fragmentManager = getFragmentManager();
 		setDefaultFirstFragment(Constant.FRAGMENT_FLAG_MESSAGE);
@@ -122,7 +128,7 @@ public class MainActivity extends Activity implements BottomPanelCallback {
 		Fragment f = fragmentManager.findFragmentByTag(tag);
 		
 		if(f == null){
-			Toast.makeText(getApplicationContext(), "fragment = null tag = " + tag, Toast.LENGTH_SHORT).show();
+			///Toast.makeText(getApplicationContext(), "fragment = null tag = " + tag, Toast.LENGTH_SHORT).show();
 			f = BaseFragment.newInstance(getApplicationContext(), tag);
 		}
 		return f;
